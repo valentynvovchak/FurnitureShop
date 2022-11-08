@@ -1,22 +1,5 @@
-@font-face {
-    font-family: "Gilroy";
-    src: url("/public/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
-    url("/public/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Gilroy Bold";
-    src: url("/public/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"),
-    url("/public/fonts/Gilroy/Gilroy-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Gilroy Light";
-    src: url("/public/fonts/Gilroy/Gilroy-Light.woff2") format("woff2"),
-    url("/public/fonts/Gilroy/Gilroy-Light.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Gilroy Thin";
-    src: url("/public/fonts/Gilroy/Gilroy-Thin.woff") format("woff")
-}
+/*@font-face {*/
+/*    font-family: "Gilroy";*/
+/*    src: url("/public/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),*/
+/*    url("/public/fonts/Gilroy/Gilroy-Regular.woff") format("woff");*/
+/*}*/
