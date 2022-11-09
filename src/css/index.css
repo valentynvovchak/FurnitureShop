@@ -81,6 +81,82 @@ body {
 .favorite, .cart, .profile {
     cursor: pointer;
 }
+
+.carousel__image {
+    display: block;
+    padding: 0 16px;
+    /*width: 934px !important;*/
+}
+
+.header__carousel {
+    position: relative;
+}
+.carousel__images {
+    padding-top: 80px;
+}
+
+#prev_arrow, #next_arrow {
+    position: absolute;
+    top: 1%;
+    z-index: 1;
+
+    width: 48px;
+    height: 48px;
+    background-color: #E89F71;
+    border-radius: 50%;
+    opacity: 0.3;
+    background-image: url("/public/img/triangle.svg");
+    background-repeat: no-repeat;
+    transition: all .2s linear;
+}
+
+#prev_arrow {
+    right: calc(16% + 28px);
+    background-position: 50% 53%;
+    transform: rotate(90deg);
+}
+
+#next_arrow {
+    right: calc(16% - 28px);
+    background-position: 50% 53%;
+    transform: rotate(-90deg);
+}
+
+#prev_arrow:hover, #next_arrow:hover {
+    opacity: 1;
+}
+#dots {
+    position: absolute;
+    top: -2%;
+    right: calc(52% + 28px);
+    z-index: 1;
+    transform: rotate(-90deg);
+    opacity: 0.7;
+}
+.slick-dots li button {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    font-size: 0;
+    /*border: 0;*/
+    transition: all .2s linear;
+    padding: 6px;
+    /*border: 10px solid rgb(252 248 243);*/
+    border: 8px solid rgb(249 241 231);
+}
+
+.slick-dots li button:hover {
+    background-color: #a1a1a1;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #E89F71;
+    outline: 2px solid #E89F71;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+}
 /* / Header */
 
 
