@@ -10,7 +10,7 @@
     <!--  Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!--  Meta styles  -->
     <link rel="stylesheet" href="/src/css/fonts.css">
@@ -48,7 +48,11 @@
                 </div>
 
                 <div class="header__right">
-                    <img class="favorite" src="/public/img/favorite.png" alt="favorite">
+                    <div class="favorite">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9996 19.054C-8 7.99991 5.99999 -4.00009 11.9996 3.58797C18 -4.00009 32 7.99991 11.9996 19.054Z" stroke="#262F56" stroke-width="1.8"/>
+                        </svg>
+                    </div>
                     <img class="cart" src="/public/img/cart.png" alt="cart">
                     <img class="profile" src="/public/img/profile.jpg" alt="profile">
                 </div>
@@ -58,16 +62,60 @@
         </div>
 
         <article class="header__carousel">
-
-            <div id="prev_arrow"></div>
-            <div id="next_arrow"></div>
-            <div id="dots"></div>
-
-            <div class="carousel__images">
-                <img class="carousel__image" src="/public/img/carousel_img_1.jpg" alt="carousel img">
-                <img class="carousel__image" src="/public/img/carousel_img_2.jpg" alt="carousel img">
-                <img class="carousel__image" src="/public/img/carousel_img_3.jpg" alt="carousel img">
+            <div class="agitation">
+                <h1 class="title__agitation">High-Quality Furniture Just For You</h1>
+                <p class="desc__agitation">Our furniture is made from selected 
+                and best quality materials that are 
+                suitable for your dream home</p>
+                <button class="button">Shop Now</button>
             </div>
+            <div id="prev_arrow">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99994 1L0.999939 8L7.99994 15" stroke="#E89F71" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div id="next_arrow">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.99994 1L0.999939 8L7.99994 15" stroke="#E89F71" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div id="dots"></div>
+            <div class="carousel__images">
+                <div class="carousel_img_block">
+                    <img class="carousel__image" src="/public/img/carousel_img_1.jpg" alt="carousel img">
+                    <div class="carousel_info">
+                        <h3>Bohauss</h3>
+                        <p>Luxury big sofa 2-seat</p>
+                        <h4>Rp 17.000.000</h4>
+                        <div class="carousel_info__arrow">
+                            <img class="arrow" src="/public/img/arrow.png" alt="arrow">
+                        </div>    
+                    </div>
+                </div>
+                <div class="carousel_img_block">
+                    <img class="carousel__image" src="/public/img/carousel_img_2.jpg" alt="carousel img">
+                    <div class="carousel_info">
+                        <h3>Bohauss</h3>
+                        <p>Luxury big sofa 2-seat</p>
+                        <h4>Rp 17.000.000</h4>
+                        <div class="carousel_info__arrow">
+                            <img class="arrow" src="/public/img/arrow.png" alt="arrow">
+                        </div>    
+                    </div>
+                </div>   
+                <div class="carousel_img_block">    
+                    <img class="carousel__image" src="/public/img/carousel_img_3.jpg" alt="carousel img">
+                    <div class="carousel_info">
+                        <h3>Bohauss</h3>
+                        <p>Luxury big sofa 2-seat</p>
+                        <h4>Rp 17.000.000</h4>
+                        <div class="carousel_info__arrow">
+                            <img class="arrow" src="/public/img/arrow.png" alt="arrow">
+                        </div>    
+                    </div>
+                </div>   
+            </div>
+            
 
         </article>
 

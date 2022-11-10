@@ -73,6 +73,12 @@ body {
     background-color: white;
 }
 
+.favorite:hover svg path{
+    fill: red;
+    stroke: red;
+
+}
+
 .profile {
     border-radius: 50%;
     width: 40px;
@@ -80,51 +86,178 @@ body {
 
 .favorite, .cart, .profile {
     cursor: pointer;
+
 }
 
 .carousel__image {
     display: block;
     padding: 0 16px;
-    /*width: 934px !important;*/
+    min-width: 100%;
 }
 
 .header__carousel {
     position: relative;
 }
+
+.agitation {
+    position: absolute;
+    width: 30%;
+    left: 7%;
+    top: 5%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.72);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel_info {
+    background-color: rgba(255, 255, 255, 0.72);
+    width: 32%;
+    height: 27%;
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    z-index: 2;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.carousel_info__arrow {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    right: 5%;
+    bottom: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.carousel_info__arrow:hover {
+    animation: carousel_info__arrow 1s linear infinite;
+}
+
+@keyframes carousel_info__arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.carousel_info p {
+    color: #616161;
+    font-size: 16px;
+}
+
+.carousel_info h3 {
+    font-size: 28px;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.carousel_info h4 {
+    color: #3A3A3A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title__agitation {
+    font-size: 39px;
+}
+
+.desc__agitation {
+    color: #898989;
+    padding: 20px 0 30px 0;
+}
+
+.button {
+    border: none;
+    background-color: #E89F71;
+    padding: 5% 10%;
+    color: white;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.agitation button:hover {
+    background-color: white;
+    color: #E89F71;
+}
+
 .carousel__images {
     padding-top: 80px;
+}
+
+.carousel__desc {
+    background-color: rgba(255, 255, 255, 0.72);
+    width: 290px;
+    height: 150px;
+    z-index: 1;
+    float: right;
+    padding: 0 20px 20px 20px;
+    margin-top: -6%;
+    position: absolute;
+    right: 0;
+    background-color: aqua;
 }
 
 #prev_arrow, #next_arrow {
     position: absolute;
     top: 1%;
     z-index: 1;
-
+    cursor: pointer;
     width: 48px;
     height: 48px;
-    background-color: #E89F71;
+    background-color: rgb(249,241,231);
     border-radius: 50%;
-    opacity: 0.3;
-    background-image: url("/public/img/triangle.svg");
     background-repeat: no-repeat;
     transition: all .2s linear;
+    
 }
 
-#prev_arrow {
-    right: calc(16% + 28px);
-    background-position: 50% 53%;
-    transform: rotate(90deg);
+.carousel_img_block {
+    position: relative;
+
 }
 
 #next_arrow {
     right: calc(16% - 28px);
-    background-position: 50% 53%;
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev_arrow {
+    right: calc(16% + 28px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #prev_arrow:hover, #next_arrow:hover {
-    opacity: 1;
+    background-color: #E89F71;
 }
+
+#prev_arrow:hover svg path, #next_arrow:hover svg path {
+    stroke: white;
+    transition: all .2s linear;
+}
+
+
+
 #dots {
     position: absolute;
     top: -2%;
@@ -133,6 +266,7 @@ body {
     transform: rotate(-90deg);
     opacity: 0.7;
 }
+
 .slick-dots li button {
     cursor: pointer;
     width: 12px;
