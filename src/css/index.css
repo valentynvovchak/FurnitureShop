@@ -101,8 +101,8 @@ body {
 
 .agitation {
     position: absolute;
-    width: 30%;
-    left: 7%;
+    width: 32%;
+    left: 5%;
     top: 5%;
     z-index: 1;
     background: rgba(255, 255, 255, 0.72);
@@ -293,8 +293,34 @@ body {
 }
 /* / Header */
 
+/*Privileges*/
 
+.privileges {
+    padding: 5% 0 5% 0;
+    display: flex;
+}
 
+.privileges_block {
+    display: flex;
+    padding: 3%;
+    align-items: center;
+}
+
+.title_priv {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.desc_priv {
+    font-weight: 500;
+    font-size: 16px;
+    color: #898989;
+}
+
+.about_priv {
+    padding-left: 15px;
+}
 /* Media Area */
 
 /*
