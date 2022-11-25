@@ -81,7 +81,6 @@ body {
 .favorite:hover svg path{
     fill: red;
     stroke: red;
-
 }
 
 .profile {
@@ -89,9 +88,11 @@ body {
     width: 40px;
 }
 
-.favorite, .cart, .profile {
+.favorite, .cart_logo, .profile {
     cursor: pointer;
-
+}
+.favorite {
+    line-height: .7;
 }
 
 .carousel__image {
@@ -107,8 +108,13 @@ body {
 .agitation {
     position: absolute;
     width: 32%;
-    left: 5%;
-    top: 5%;
+    height: calc(100% - 80px);
+    /*left: 5%;*/
+    /*top: 5%;*/
+    /*padding-top: 80px;*/
+    /*transform: translateY(-80px);*/
+    left: 80px;
+    top: 0;
     z-index: 1;
     background: rgba(255, 255, 255, 0.72);
     padding: 5%;
@@ -188,7 +194,7 @@ body {
 }
 
 .button {
-    border: none;
+    border: 1px solid #E89F71;
     background-color: #E89F71;
     padding: 5% 10%;
     color: white;
@@ -234,7 +240,14 @@ body {
 
 .carousel_img_block {
     position: relative;
+}
 
+.carousel_info{
+    opacity: 0;
+    transition: all .5s linear;
+}
+.slick-current > .carousel_info {
+    opacity: 1;
 }
 
 #next_arrow {
@@ -285,6 +298,11 @@ body {
     /*border: 10px solid rgb(252 248 243);*/
     border: 8px solid rgb(249 241 231);
 }
+#room_dots > .slick-dots li button {
+    border: 8px solid #fcf8f3;
+}
+
+/* #fcf8f3 */
 
 .slick-dots li button:hover {
     background-color: #a1a1a1;
@@ -303,6 +321,7 @@ body {
 .privileges {
     padding: 5% 0 5% 0;
     display: flex;
+    justify-content: center;
 }
 
 .privileges_block {
@@ -340,9 +359,11 @@ body {
 .all_products {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.title_products, {
+.title_products {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
@@ -352,7 +373,7 @@ body {
     margin: 20px;
     position: relative;
     width: 20%;
-    background-color: #F4F5F7;  
+    background: #F4F5F7;
     transition: all .5s linear;
 }
 
@@ -360,7 +381,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10% 0 10% 10%;
+    margin: 10%;
 }
 
 .title_products {
@@ -408,10 +429,10 @@ body {
 }
 
 .button_products, .button_cart {
-    border: none;
     background-color: #E89F71;
     padding: 1% 5%;
     color: white;
+    border: 1px solid #E89F71;
     cursor: pointer;
     transition: all .4s linear;
 }
@@ -465,6 +486,7 @@ body {
     z-index: 1;
     display: flex;
     color: white;
+    cursor: pointer;
 }
 
 .share p, .add_favorite p{
@@ -478,14 +500,14 @@ body {
 }
 
 .share:hover svg path, .share:hover p{
-    fill: black;
-    color: black;
+    fill: #2EC1AC;
+    color: #f4f5f7;
 }
 
 .add_favorite:hover svg path, .add_favorite:hover p{
     fill: red;
     stroke: red;
-    color: black;
+    color: #f4f5f7;
 }
 /*/ cart_second*/
 
@@ -501,9 +523,10 @@ body {
     padding: 5% 0 5% 10%;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
-#img_room {
+.img_room {
     max-height: 415px;
     margin: 0;
     width: 100%;
@@ -519,7 +542,14 @@ body {
 }
 
 .info_rooms {
-/*    width: 100*/
+    width: 445px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    /*padding: 5%;*/
+    margin-right: 40px;
 }
 
 .desc_rooms {
@@ -531,7 +561,7 @@ body {
 
 .carousel_rooms {
     width: 60%;
-    float: left;
+    /*float: left;*/
 }
 
 .button_rooms {
