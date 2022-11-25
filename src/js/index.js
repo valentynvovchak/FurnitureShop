@@ -49,3 +49,31 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.carousel_rooms').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 2.1,
+        slidesToScroll: 1,
+        draggable: false,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        prevArrow: false,
+        appendDots: $('#room_dots'),
+        nextArrow: $('#room_arrow'),
+
+    });
+});
+//
+//var hiddenElement = document.getElementById("img_room");
+//var btn = document.querySelector('#room_arrow');
+//
+//function handleButtonClick() {
+//   hiddenElement.scrollIntoView({minHeight: "560px"});
+//}
+//
+//btn.addEventListener('click', handleButtonClick);
+
+
