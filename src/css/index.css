@@ -363,7 +363,7 @@ body {
     margin-bottom: 20px;
 }
 
-.title_products {
+.title_products, .title_t_t, .title_desc_foto_furniture {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
@@ -384,7 +384,7 @@ body {
     margin: 10%;
 }
 
-.title_products {
+.title_product, .title_tips {
     font-size: 24px;
     color: #3A3A3A;
     font-weight: 600;
@@ -532,6 +532,7 @@ body {
     width: 100%;
 }
 
+
 /*img_room min-height 460px*/
 
 
@@ -571,19 +572,19 @@ body {
     color: white;
     cursor: pointer;
     transition: all .4s linear;
+    border: 1px solid #E89F71;
 }
 
 .button_rooms:hover {
     background-color: white;
     color: #E89F71;
-    border: 1px solid #E89F71;
 }
 
 .room {
     margin: 0 15px 0 15px;
 }
 
-#room_arrow {
+#room_arrow, #tips_arrow_right, #tips_arrow_left {
     position: absolute;
     top: 45%;
     z-index: 1;
@@ -604,18 +605,227 @@ body {
 
 #room_dots {
     position: absolute;
-    bottom: 3%;
+    bottom: 1%;
     right: calc(23% + 28px);
     z-index: 1;
     transform: rotate(-90deg);
     opacity: 0.7;
 }
-/*/ROOMS*/
 
-.room .slick_active {
-    min-height: 450px;
+
+
+.slick-slide.slick-current.slick-active.slick-center.room img {
+    min-height: 469px ;
 }
 
+/*/ROOMS*/
+
+/*Tips & Tricks*/
+
+.tips_tricks {
+    margin: 50px 0 100px;
+    position: relative;
+}
+
+.carousel_tips {
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.block_tips {
+    margin: 20px;
+    box-shadow: none;
+
+}
+
+#tips_arrow_left {
+    left: calc(-2% + 25px);
+    transform: rotate(0);
+    top: 55%;
+}
+
+#tips_arrow_right {
+    right: calc(-2% + 24px);
+    top: 55%;
+}
+
+.desc_tips {
+    display: flex;
+    margin: 5%;
+    flex-direction: column;
+}
+
+.data_tips {
+    font-weight: 400;
+    font-size: 14px;
+    color: #898989;
+}
+
+#tips_dots {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+/*    margin: auto;*/
+    transform: rotate(-90deg);
+}
+
+#tips_dots > .slick-dots li button {
+    border: 8px solid #ffff;
+}
+
+.block_tips.slick-slide.slick-current.slick-active {
+    box-shadow: 1px 6px 6px 2px #F4F4F4;
+}
+/*/Tips & Tricks*/
+
+/*#FuniroFurniture*/
+.block_desc_foto_furniture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc_foto_furniture {
+    font-size: 20px;
+    font-weight: 600;
+    color: #616161;
+}
+
+.foto_left_bottom {
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+}
+.img_fur, .img_fur3 {
+    padding: 20px 20px 0 0;
+}
+
+.img_fur1, .img_fur2 {
+    padding: 20px 20px 0 0;
+    min-width: 130%;
+}
+
+.img_fur3 {
+    min-width: 70%;
+}
+
+.block_all_foto_furniture {
+    display: flex;
+    padding-bottom: 5%;
+/*    border-bottom: 1px solid #D8D8D8;*/
+}
+
+.foto_left_top {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.block_foto_center {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 15%;
+}
+
+.foto_right_top {
+    display: flex;
+    width: 55%;
+    align-items: flex-end;
+}
+
+.foto_right_bottom {
+    display: flex;
+    align-items: flex-start;
+    width: 47%;
+}
+
+.container_foto {
+    width: 1900px;
+    margin: 0 auto;
+}
+/*/#FuniroFurniture*/
+/*FOOTER*/
+
+.footer {
+    padding: 8% 0 5% 0;
+    border-top: 1px solid #D8D8D8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.contacts, .menu, .connected, .acount {
+    display: flex;
+    flex-direction: column;
+    line-height: 250%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.connected, .acount {
+    justify-content: flex-start;
+}
+.contacts a {
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #616161;
+    cursor: pointer;
+}
+
+.geo, .number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.geo img {
+    width: 8%;
+}
+
+.number img {
+    width: 12%;
+}
+
+#form_email {
+    display: flex;
+    padding-top: 3%;
+}
+
+#email {
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 5px;
+    padding: 3%;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    background-color: #F4F5F7;
+}
+
+#submit_email {
+    background-color: #E89F71;
+    width: 60px;
+    height: 45px;
+    background-image: url(/public/img/submit.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+}
+
+/*/FOOTER*/
 /* Media Area */
 
 /*
@@ -634,24 +844,36 @@ body {
     }
 }
 @media (min-width: 768px){
+    .container_foto {
+    width: 767px;
+    }
     .container {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px){
+    .container_foto {
+    width: 990px;
+    }
     .container {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
+    .container_foto {
+    width: 1199px;
+    }
     .container {
         max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px){
+    .container_foto {
+    width: 1399px;
+    }
     .container {
         max-width: 1320px;
     }

@@ -53,7 +53,8 @@ $(document).ready(function(){
     $('.carousel_rooms').slick({
         dots: true,
         infinite: true,
-        slidesToShow: 2.1,
+        centerMode: true,
+        slidesToShow: 2,
         slidesToScroll: 1,
         draggable: false,
         autoplay: false,
@@ -63,17 +64,30 @@ $(document).ready(function(){
         prevArrow: false,
         appendDots: $('#room_dots'),
         nextArrow: $('#room_arrow'),
+        
 
     });
 });
-//
-//var hiddenElement = document.getElementById("img_room");
-//var btn = document.querySelector('#room_arrow');
-//
-//function handleButtonClick() {
-//   hiddenElement.scrollIntoView({minHeight: "560px"});
-//}
-//
-//btn.addEventListener('click', handleButtonClick);
+
+$(document).ready(function(){
+    $('.carousel_tips').slick({
+        centerMode: true,
+        centerPadding: '5px',
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        draggable: false,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        prevArrow: $('#tips_arrow_right'),
+        appendDots: $('#tips_dots'),
+        nextArrow: $('#tips_arrow_left'),
+    });
+});
+
+
 
 
