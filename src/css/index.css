@@ -124,7 +124,7 @@ body {
 .agitation {
     position: absolute;
     width: 32%;
-    height: calc(100% - 80px);
+    height: calc(105% - 80px);
     /*left: 5%;*/
     /*top: 5%;*/
     /*padding-top: 80px;*/
