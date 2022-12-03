@@ -53,8 +53,9 @@ $(document).ready(function(){
     $('.carousel_rooms').slick({
         dots: true,
         infinite: true,
-        centerMode: true,
-        slidesToShow: 2,
+//        centerMode: true,
+//        centerPadding: '85px',
+        slidesToShow: 2.9,
         slidesToScroll: 1,
         draggable: false,
         autoplay: false,
@@ -64,6 +65,39 @@ $(document).ready(function(){
         prevArrow: false,
         appendDots: $('#room_dots'),
         nextArrow: $('#room_arrow'),
+        responsive: [
+            {
+                 breakpoint: 530,
+                settings: {
+              
+                     slidesToShow: 1
+                 }
+            
+            },
+            {
+                 breakpoint: 900,
+                settings: {
+              
+                     slidesToShow: 1.6
+                 }
+            
+            },
+            {
+                 breakpoint: 1494,
+                settings: {
+              
+                     slidesToShow: 2.3
+                 }
+            
+            },
+             {
+                 breakpoint: 1200,
+                 settings: {
+              
+                     slidesToShow: 2
+                 }
+             }
+    ]
         
 
     });
@@ -85,7 +119,15 @@ $(document).ready(function(){
         prevArrow: $('#tips_arrow_right'),
         appendDots: $('#tips_dots'),
         nextArrow: $('#tips_arrow_left'),
-    });
+        responsive: [
+             {
+                 breakpoint: 400,
+                 settings: {
+              
+                     slidesToShow: 1
+                 }
+             }
+    ]});
 });
 
 

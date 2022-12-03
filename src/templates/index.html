@@ -54,7 +54,38 @@
                         </svg>
                     </div>
                     <img class="cart_logo" src="/public/img/Cart.svg" alt="cart_logo">
-                    <img class="profile" src="/public/img/profile.jpg" alt="profile">
+                    <img class="profile" src="/public/img/profile.png" alt="profile">
+                </div>
+                <div class="hamburger-menu">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                  </label>
+                    <div class="menu__box">
+                  <ul class="menu_li">
+                    <li>
+                        <a href="#" class="header__popup_box" onclick="toggleActive(this)">
+                            <span>Products</span>
+                            <img src="/public/img/triangle.svg" alt="triangle">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__popup_box" onclick="toggleActive(this)">
+                            <span>Rooms</span>
+                            <img src="/public/img/triangle.svg" alt="triangle">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link_box">Inspirations</a>
+                    </li>
+                    <li>
+                        <form style="padding-top: 15px" action="#" method="get" enctype="text/plain">
+                            <input id="search_box" name="search" type="text" placeholder="Search for minimalist chair">
+                        </form>
+                    </li>
+<!--                    <li><a class="menu__item" href="#">Контакты</a></li>-->
+                  </ul>
+                </div>        
                 </div>
 
             </article>
@@ -434,24 +465,39 @@
             <div class="carousel_rooms">
                 <div class="room">
                     <img class="img_room" src="/public/img/room1.jpg">
-<!--                    <div class="desc_room">-->
-<!--                        <p class="desc_rooms"></p>-->
-<!--                        <p class="title_room"></p>-->
-<!--                    </div>-->
+                   <div class="desc_room">
+                       <div class="rooms_desc">
+                            <p class="p_rooms">01 &mdash; Bed Room</p>
+                            <p class="title_room">Inner Peace</p>
+                       </div>
+                       <div class="arrow_room">
+                        <img src="/public/img/arrow_white_right.gif">
+                       </div>
+                    </div>
                 </div>
                 <div class="room">
                     <img class="img_room" src="/public/img/room2.jpg">
-<!--                    <div class="desc_room">-->
-<!--                        <p class="desc_rooms"></p>-->
-<!--                        <p class="title_room"></p>-->
-<!--                    </div>-->
+                    <div class="desc_room">
+                       <div class="rooms_desc">
+                            <p class="p_rooms">01 &mdash; Bed Room</p>
+                            <p class="title_room">Inner Peace</p>
+                       </div>
+                       <div class="arrow_room">
+                        <img src="/public/img/arrow_white_right.gif">
+                       </div>
+                    </div>
                 </div>
                 <div class="room">
                     <img class="img_room" src="/public/img/room3.jpg">
-<!--                    <div class="desc_room">-->
-<!--                        <p class="desc_rooms"></p>-->
-<!--                        <p class="title_room"></p>-->
-<!--                    </div>-->
+                    <div class="desc_room">
+                       <div class="rooms_desc">
+                            <p class="p_rooms">01 &mdash; Bed Room</p>
+                            <p class="title_room">Inner Peace</p>
+                       </div>
+                       <div class="arrow_room">
+                        <img src="/public/img/arrow_white_right.gif">
+                       </div>
+                    </div>
                 </div>
             </div>
             <div id="room_arrow">
